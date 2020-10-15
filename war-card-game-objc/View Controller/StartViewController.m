@@ -32,6 +32,6 @@
 
 - (IBAction)startButton:(id)sender {
     
-    NSLog(@"Start button tapped!");
+//    NSLog(@"Start button tapped!");
 }
 @end

@@ -34,19 +34,19 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     
-    NSLog(@"Game Start ->");
+//    NSLog(@"Game Start ->");
 }
 
 - (IBAction)dealButton:(id)sender {
     
-    NSLog(@"Deal button tapped!");
+//    NSLog(@"Deal button tapped!");
     
     // When tapped, generate random number for player and cpu
     int playerNum = [self.model getRandomNumber];
     int cpuNum = [self.model getRandomNumber];
     
-    NSLog(@"Player : %d", playerNum);
-    NSLog(@"CPU    : %d", cpuNum);
+//    NSLog(@"Player : %d", playerNum);
+//    NSLog(@"CPU    : %d", cpuNum);
     
     // Make a judge who wins
     int judgeCode = [GameLogic whoWinGameIsPlayerWith:playerNum orCPUWith:cpuNum];
