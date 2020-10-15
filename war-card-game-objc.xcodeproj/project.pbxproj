@@ -14,6 +14,9 @@
 		74972AF8253461A10014A2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74972AF7253461A10014A2FB /* Assets.xcassets */; };
 		74972AFB253461A10014A2FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74972AF9253461A10014A2FB /* LaunchScreen.storyboard */; };
 		74972AFE253461A10014A2FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74972AFD253461A10014A2FB /* main.m */; };
+		74972B0F253541420014A2FB /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 74972B0E253541420014A2FB /* GameLogic.m */; };
+		74972B142535B1E30014A2FB /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 74972B132535B1E30014A2FB /* Model.m */; };
+		74972B1D2535B6020014A2FB /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74972B1C2535B6020014A2FB /* StartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		74972AFA253461A10014A2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74972AFC253461A10014A2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74972AFD253461A10014A2FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74972B0D253541420014A2FB /* GameLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
+		74972B0E253541420014A2FB /* GameLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameLogic.m; sourceTree = "<group>"; };
+		74972B122535B1E30014A2FB /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		74972B132535B1E30014A2FB /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		74972B1B2535B6020014A2FB /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		74972B1C2535B6020014A2FB /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +74,61 @@
 				74972AEC2534619F0014A2FB /* AppDelegate.m */,
 				74972AEE2534619F0014A2FB /* SceneDelegate.h */,
 				74972AEF2534619F0014A2FB /* SceneDelegate.m */,
-				74972AF12534619F0014A2FB /* ViewController.h */,
-				74972AF22534619F0014A2FB /* ViewController.m */,
-				74972AF42534619F0014A2FB /* Main.storyboard */,
+				74972B192535B21E0014A2FB /* Helper */,
+				74972B182535B2170014A2FB /* Model */,
+				74972B172535B20B0014A2FB /* View Controller */,
+				74972B162535B2000014A2FB /* View */,
+				74972B1A2535B2330014A2FB /* Storyboard */,
 				74972AF7253461A10014A2FB /* Assets.xcassets */,
-				74972AF9253461A10014A2FB /* LaunchScreen.storyboard */,
 				74972AFC253461A10014A2FB /* Info.plist */,
 				74972AFD253461A10014A2FB /* main.m */,
 			);
 			path = "war-card-game-objc";
+			sourceTree = "<group>";
+		};
+		74972B162535B2000014A2FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74972B172535B20B0014A2FB /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74972AF12534619F0014A2FB /* ViewController.h */,
+				74972AF22534619F0014A2FB /* ViewController.m */,
+				74972B1B2535B6020014A2FB /* StartViewController.h */,
+				74972B1C2535B6020014A2FB /* StartViewController.m */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		74972B182535B2170014A2FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74972B122535B1E30014A2FB /* Model.h */,
+				74972B132535B1E30014A2FB /* Model.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74972B192535B21E0014A2FB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				74972B0D253541420014A2FB /* GameLogic.h */,
+				74972B0E253541420014A2FB /* GameLogic.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		74972B1A2535B2330014A2FB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				74972AF42534619F0014A2FB /* Main.storyboard */,
+				74972AF9253461A10014A2FB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +161,7 @@
 				TargetAttributes = {
 					74972AE72534619F0014A2FB = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -147,6 +203,9 @@
 			files = (
 				74972AF32534619F0014A2FB /* ViewController.m in Sources */,
 				74972AED2534619F0014A2FB /* AppDelegate.m in Sources */,
+				74972B0F253541420014A2FB /* GameLogic.m in Sources */,
+				74972B1D2535B6020014A2FB /* StartViewController.m in Sources */,
+				74972B142535B1E30014A2FB /* Model.m in Sources */,
 				74972AFE253461A10014A2FB /* main.m in Sources */,
 				74972AF02534619F0014A2FB /* SceneDelegate.m in Sources */,
 			);
@@ -291,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WL4944RVY;
 				INFOPLIST_FILE = "war-card-game-objc/Info.plist";
@@ -300,6 +360,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chen.war-card-game-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WL4944RVY;
 				INFOPLIST_FILE = "war-card-game-objc/Info.plist";
@@ -318,6 +381,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chen.war-card-game-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
